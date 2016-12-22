@@ -1,0 +1,33 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-7.2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[filebeat::default]
+      - recipe[sysstat::default]
+    attributes:
+      filebeat:
+        prospectors:
+          system_logs:
+            filebeat:
+              prospectors:
+              - paths:
+                - /var/log/messages
+                type: log
+                fields:
+                  type: system_logs
+        config:
+          output:
+            file:
+              path: /tmp/testlog
+              filename: testlog.log	
+              rotate_every_kb: 1000
+              number_of_files: 7              
