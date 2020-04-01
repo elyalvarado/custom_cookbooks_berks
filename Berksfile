@@ -10,7 +10,7 @@ cookbook 'seven_zip', '= 2.0.2'
 # Direct nodejs dependencies
 cookbook 'homebrew', '= 2.1.2'
 cookbook 'apt', '= 3.0.0'
-cookbook 'ark', '= 3.0.0'
+cookbook 'ark', '= 2.2.1'
 cookbook 'build-essential', '= 3.2.0'
 cookbook 'yum-epel', '= 0.7.1'
 # End of nodejs dependencies
