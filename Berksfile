@@ -15,4 +15,3 @@ cookbook 'build-essential', '= 3.2.0'
 cookbook 'yum-epel', '= 0.7.1'
 # End of nodejs dependencies
 cookbook 'nodejs', '= 3.0.0'
-cookbook 'yarn', '= 0.2.0'
