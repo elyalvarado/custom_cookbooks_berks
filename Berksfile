@@ -4,6 +4,7 @@ cookbook 'happy_filebeat_cookbook', '~> 0.1.0', git: 'https://github.com/jsuarez
 cookbook 'opsworks_delayed_job', '~> 0.8', git: 'https://github.com/elyalvarado/opsworks_delayed_job.git'
 cookbook 'sysstat', '~>0.1.0', git: 'https://github.com/phlipper/chef-sysstat.git'
 # Force dependencies for nodejs to versions that work in Chef 11
+cookbook 'chef_handler', '= 1.4.0'
 cookbook 'windows', '= 1.44.3'
 cookbook 'seven_zip', '= 2.0.2'
 # Direct nodejs dependencies
